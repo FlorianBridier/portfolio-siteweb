@@ -1,10 +1,10 @@
-# 🌐 Portfolio – Florian Bridier
+# Portfolio – Florian Bridier
 
 🔗 **Démo en ligne** : https://florian-bridier.fr
 
 ---
 
-## 🎯 Présentation
+## Présentation
 
 Ce projet correspond à mon portfolio personnel, conçu pour présenter mon parcours, mes compétences et mes projets dans le domaine de la cybersécurité, des systèmes et des réseaux.
 
@@ -12,7 +12,7 @@ L’objectif est de disposer d’un support professionnel accessible en ligne, m
 
 ---
 
-## 🧠 Objectifs du projet
+## Objectifs du projet
 
 - Présenter mes projets (FitLab, Pac-Man, Gerico, Calculateur réseau)
 - Mettre en valeur mes compétences techniques
@@ -22,7 +22,7 @@ L’objectif est de disposer d’un support professionnel accessible en ligne, m
 
 ---
 
-## ⚙️ Technologies utilisées
+## Technologies utilisées
 
 - HTML5
 - CSS3
@@ -31,11 +31,11 @@ L’objectif est de disposer d’un support professionnel accessible en ligne, m
 
 ---
 
-## 🔐 Sécurité
+## Sécurité
 
 Une attention particulière a été portée à la sécurisation du site.
 
-### 🔒 Mesures mises en place
+### Mesures mises en place
 
 - HTTPS forcé
 - **Content Security Policy (CSP)** stricte
@@ -45,7 +45,7 @@ Une attention particulière a été portée à la sécurisation du site.
 - Referrer Policy configurée
 - Permissions Policy restrictive
 
-### 🧪 Vérifications
+### Vérifications
 
 Le site a été testé via :
 
@@ -55,21 +55,7 @@ Le site a été testé via :
 
 ---
 
-## 🧱 Structure du projet
-portfolio/
-├── index.html
-├── projets.html
-├── competences.html
-├── parcours.html
-├── contact.html
-├── styles.css
-├── script.js
-├── assets/
-└── .htaccess
-
----
-
-## 💡 Points clés
+## Points clés
 
 - Site entièrement développé sans framework
 - Design moderne et responsive
@@ -80,7 +66,7 @@ portfolio/
 
 ---
 
-## 📈 Ce que ce projet m’a apporté
+## Ce que ce projet m’a apporté
 
 - Déploiement d’un site web en production
 - Mise en place de mesures de sécurité web concrètes
