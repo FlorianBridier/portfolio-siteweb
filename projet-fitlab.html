@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Projet FitLab : application mobile Flutter/Supabase avec suivi sportif, nutrition, coaching, architecture Docker/Nginx, sécurité et supervision." />
+
+  <title>FitLab | Projet détaillé</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header class="site-header" id="top">
+  <nav class="navbar">
+
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <div class="brand-text">
+        <span class="brand-name">Florian Bridier</span>
+        <span class="brand-sub">Cybersecurity & Infrastructure</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <i></i><i></i><i></i>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="parcours.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-socials">
+      <a href="https://www.linkedin.com/in/florian-bridier-aa515a275/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.24 8.25h4.5V24H.24V8.25zM7.5 8.25h4.31v2.15h.06c.6-1.14 2.06-2.34 4.24-2.34 4.53 0 5.37 2.98 5.37 6.85V24h-4.5v-7.68c0-1.83-.03-4.18-2.55-4.18-2.55 0-2.94 1.99-2.94 4.05V24H7.5V8.25z"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/FlorianBridier" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.1.78-.25.78-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.53-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.14 1.17.91-.25 1.88-.37 2.84-.37.96 0 1.93.12 2.84.37 2.18-1.48 3.14-1.17 3.14-1.17.62 1.59.23 2.77.11 3.06.73.8 1.18 1.82 1.18 3.07 0 4.38-2.68 5.35-5.24 5.64.41.35.78 1.04.78 2.1v3.12c0 .31.21.66.79.55C20.71 21.41 24 17.09 24 12 24 5.65 18.85.5 12 .5z"/>
+        </svg>
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+  <main>
+
+    <section class="project-detail-hero section">
+      <div class="container project-detail-grid reveal">
+
+        <div>
+          <a class="back-link" href="projets.html">← Retour aux projets</a>
+
+          <p class="eyebrow">SAE · Application mobile & infrastructure</p>
+
+          <h1>FitLab — Le laboratoire du sport</h1>
+
+          <p class="hero-text">
+            Application mobile de suivi sportif développée en équipe. FitLab centralise les entraînements,
+            la nutrition, les abonnements et la relation coach/athlète, avec une architecture moderne
+            basée sur Flutter, Supabase, Docker, Nginx et une démarche de sécurisation réseau.
+          </p>
+
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/FlorianBridier/FitLab-SAE" target="_blank" rel="noopener">Accéder au GitHub du projet</a>
+          </div>
+        </div>
+
+        <div class="project-detail-cover">
+          <img src="assets/img/fitlab.png" alt="Aperçu du projet FitLab" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section detail-section">
+      <div class="container detail-layout">
+
+        <aside class="project-summary-card reveal">
+          <h2>Résumé technique</h2>
+
+          <ul>
+            <li><strong>Type :</strong> application mobile / web</li>
+            <li><strong>Contexte :</strong> projet universitaire SAE</li>
+            <li><strong>Rôle :</strong> partie réseau / infrastructure</li>
+            <li><strong>Frontend :</strong> Flutter</li>
+            <li><strong>Backend :</strong> Node.js / API</li>
+            <li><strong>Base :</strong> Supabase / PostgreSQL</li>
+            <li><strong>Infra :</strong> Docker, Nginx, VM Ubuntu</li>
+            <li><strong>Sécurité :</strong> HTTPS, headers, CSP, WAF, scans</li>
+            <li><strong>Monitoring :</strong> Prometheus, Grafana, Node Exporter</li>
+          </ul>
+        </aside>
+
+        <div class="detail-content">
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Objectif</p>
+
+            <h2>À quoi sert le projet ?</h2>
+
+            <p>
+              FitLab est une application pensée pour centraliser le suivi sportif d’un utilisateur :
+              entraînements, nutrition, progression, abonnements et accompagnement par un coach.
+            </p>
+
+            <p>
+              Le projet distingue plusieurs profils : athlètes, coachs et administrateurs. Chaque profil
+              dispose de besoins différents, de la consultation des performances jusqu’à la gestion complète
+              des utilisateurs, rôles, données et aspects de sécurité.
+            </p>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Fonctionnalités</p>
+
+            <h2>Ce que permet l’application</h2>
+
+            <div class="feature-grid">
+              <div>
+                <h3>Suivi sportif</h3>
+                <p>Suivi des entraînements, historique, objectifs et progression quotidienne.</p>
+              </div>
+
+              <div>
+                <h3>Nutrition</h3>
+                <p>Gestion des repas, données nutritionnelles et suivi alimentaire personnalisé.</p>
+              </div>
+
+              <div>
+                <h3>Coaching</h3>
+                <p>Choix d’un coach, affectation de programmes et supervision des athlètes.</p>
+              </div>
+
+              <div>
+                <h3>Abonnements</h3>
+                <p>Modèle freemium avec plusieurs offres et logique de paiement prévue.</p>
+              </div>
+
+              <div>
+                <h3>Communauté</h3>
+                <p>Demandes d’amis, messagerie et interactions entre utilisateurs.</p>
+              </div>
+
+              <div>
+                <h3>Administration</h3>
+                <p>Gestion des rôles, utilisateurs, données et sécurité de la plateforme.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Architecture</p>
+
+            <h2>Architecture technique</h2>
+
+            <p>
+              FitLab repose sur une architecture moderne en plusieurs couches. Le client Flutter communique
+              avec une API via HTTPS/TLS. Supabase assure l’authentification, la base PostgreSQL, le temps réel
+              et le stockage. L’infrastructure est pensée pour isoler le backend et exposer uniquement un point
+              d’entrée maîtrisé.
+            </p>
+
+            <div class="architecture-flow">
+              <span>Client Flutter</span>
+              <span>Nginx</span>
+              <span>API Backend</span>
+              <span>Supabase</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Base de données</p>
+
+            <h2>Supabase & PostgreSQL</h2>
+
+            <p>
+              Supabase a été utilisé comme backend tout-en-un : authentification, base PostgreSQL,
+              données temps réel, Edge Functions et stockage. Ce choix permet une communication directe
+              avec le SDK Flutter tout en gardant une base relationnelle robuste.
+            </p>
+
+            <ul class="clean-list">
+              <li>Base PostgreSQL structurée avec plusieurs tables interconnectées.</li>
+              <li>Gestion des comptes utilisateurs et de l’authentification.</li>
+              <li>Relations entre athlètes, coachs, entraînements, repas, messages et abonnements.</li>
+              <li>Synchronisation et logique temps réel selon les besoins applicatifs.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Réseau & infrastructure</p>
+
+            <h2>Déploiement et isolation</h2>
+
+            <p>
+              La partie réseau repose sur une logique de conteneurisation avec Docker. Le frontend Flutter Web
+              est servi via Nginx, tandis que le backend reste isolé dans le réseau Docker interne.
+              L’utilisateur ne contacte qu’un point d’entrée unique, ce qui simplifie l’architecture et réduit
+              l’exposition du backend.
+            </p>
+
+            <ul class="clean-list">
+              <li>Déploiement sur VM Ubuntu.</li>
+              <li>Docker et Docker Compose pour lancer les services.</li>
+              <li>Nginx comme serveur de fichiers Flutter Web et reverse proxy.</li>
+              <li>Backend non exposé directement à Internet.</li>
+              <li>Résolution des problématiques Flutter Web : CanvasKit, CSP, assets et Single Page Application.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Sécurité</p>
+
+            <h2>Sécurisation mise en place</h2>
+
+            <p>
+              Une attention particulière a été portée à la sécurité : durcissement SSH, isolation du backend,
+              reverse proxy, en-têtes de sécurité, Content Security Policy, WAF ModSecurity, tests de sécurité
+              et supervision.
+            </p>
+
+            <ul class="clean-list">
+              <li>Connexion SSH par clé uniquement.</li>
+              <li>Désactivation du mot de passe et de l’accès root.</li>
+              <li>Protection contre XSS, clickjacking et content sniffing via headers.</li>
+              <li>Content Security Policy pour limiter les sources chargées par le navigateur.</li>
+              <li>WAF ModSecurity pour filtrer les requêtes malveillantes.</li>
+              <li>Scans de vulnérabilités avec OWASP ZAP, Nikto et Wapiti.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Supervision & continuité</p>
+
+            <h2>Monitoring, PCA/PRA</h2>
+
+            <p>
+              Le projet intègre une réflexion sur la supervision et la continuité de service. Prometheus,
+              Grafana et Node Exporter permettent de suivre les ressources serveur, tandis que des sauvegardes
+              et procédures de reprise assurent une meilleure résilience.
+            </p>
+
+            <ul class="clean-list">
+              <li>Surveillance CPU, RAM, disque et trafic réseau.</li>
+              <li>Détection des comportements anormaux.</li>
+              <li>Sauvegarde automatique des configurations critiques.</li>
+              <li>Procédure de reconstruction du serveur en moins d’une heure.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Compétences mobilisées</p>
+
+            <h2>Ce que ce projet démontre</h2>
+
+            <div class="tech-pills big">
+              <span>Flutter</span>
+              <span>Supabase</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>Nginx</span>
+              <span>Reverse proxy</span>
+              <span>VM Ubuntu</span>
+              <span>SSH sécurisé</span>
+              <span>Headers HTTP</span>
+              <span>CSP</span>
+              <span>ModSecurity</span>
+              <span>OWASP ZAP</span>
+              <span>Nikto</span>
+              <span>Wapiti</span>
+              <span>Prometheus</span>
+              <span>Grafana</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Apports</p>
+
+            <h2>Ce que ce projet m’a apporté</h2>
+
+            <p>
+              FitLab m’a permis de travailler sur un projet complet mêlant application mobile, base de données,
+              backend, infrastructure et cybersécurité. Mon rôle sur la partie réseau m’a permis de renforcer mes
+              compétences en déploiement, reverse proxy, sécurisation de serveur, Docker et supervision.
+            </p>
+
+            <p>
+              Le projet m’a aussi permis d’aborder des problématiques réalistes : exposition minimale des services,
+              sécurisation des communications, durcissement d’une VM, gestion des erreurs, logs, tests de sécurité
+              et continuité d’activité.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots-section">
+      <div class="screenshots-container">
+
+        <h2>Aperçu du projet</h2>
+
+        <div class="screenshot-block mobile">
+          <h3>Page principale FitLab</h3>
+          <img src="assets/img/fitlab/menu.png" alt="Présentation FitLab" />
+        </div>
+
+        <div class="screenshot-block mobile">
+          <h3>Nutrition</h3>
+          <img src="assets/img/fitlab/nutrition.png" alt="Interface nutrition FitLab" />
+        </div>
+
+        <div class="screenshot-block mobile">
+          <h3>Entraînements</h3>
+          <img src="assets/img/fitlab/entrainements.png" alt="Interface entraînements FitLab" />
+        </div>
+
+        <div class="screenshot-block mobile">
+          <h3>Abonnements</h3>
+          <img src="assets/img/fitlab/abonnements.png" alt="Interface abonnements FitLab" />
+        </div>
+
+
+        <div class="screenshot-block mobile">
+          <h3>Architecture réseau/sécu</h3>
+          <img src="assets/img/fitlab/reseau.png" alt="Infrastructure réseau FitLab" />
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- NAVIGATION -->
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- PROJETS -->
+    <div class="footer-col">
+      <h4>Projets</h4>
+      <ul>
+        <li><a href="projet-fitlab.html">FitLab – Le laboratoire du sport</a></li>
+        <li><a href="projet-pacman.html">Pac-Man Shattered World</a></li>
+        <li><a href="projet-gerico.html">Gerico – Gestion RH</a></li>
+        <li><a href="projet-calculateur-reseau.html">Calculateur de plage IP</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:florian.proth10@laposte.net">florian.proth10@laposte.net</a></li>
+        <li><a href="tel:+33602175398">06 02 17 53 98</a></li>
+        <li><a href="https://www.linkedin.com/in/florian-bridier-aa515a275/">LinkedIn</a></li>
+        <li><a href="https://github.com/FlorianBridier">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BAS -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Florian Bridier. Tous droits réservés.</p>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

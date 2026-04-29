@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projet Gerico : application web PHP de gestion RH, congés, employés et fiches de paie." />
+  <title>Gerico | Projet détaillé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header" id="top">
+  <nav class="navbar">
+
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <div class="brand-text">
+        <span class="brand-name">Florian Bridier</span>
+        <span class="brand-sub">Cybersecurity & Infrastructure</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <i></i><i></i><i></i>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="parcours.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-socials">
+      <a href="https://www.linkedin.com/in/florian-bridier-aa515a275/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.24 8.25h4.5V24H.24V8.25zM7.5 8.25h4.31v2.15h.06c.6-1.14 2.06-2.34 4.24-2.34 4.53 0 5.37 2.98 5.37 6.85V24h-4.5v-7.68c0-1.83-.03-4.18-2.55-4.18-2.55 0-2.94 1.99-2.94 4.05V24H7.5V8.25z"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/FlorianBridier" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.1.78-.25.78-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.53-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.14 1.17.91-.25 1.88-.37 2.84-.37.96 0 1.93.12 2.84.37 2.18-1.48 3.14-1.17 3.14-1.17.62 1.59.23 2.77.11 3.06.73.8 1.18 1.82 1.18 3.07 0 4.38-2.68 5.35-5.24 5.64.41.35.78 1.04.78 2.1v3.12c0 .31.21.66.79.55C20.71 21.41 24 17.09 24 12 24 5.65 18.85.5 12 .5z"/>
+        </svg>
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+  <main>
+    <section class="project-detail-hero section">
+      <div class="container project-detail-grid reveal">
+        <div>
+          <a class="back-link" href="projets.html">← Retour aux projets</a>
+          <p class="eyebrow">SAE · Application web PHP</p>
+          <h1>Gerico — Gestion de congés & fiches de paie</h1>
+          <p class="hero-text">Application web réalisée dans le cadre d’un projet universitaire. L’objectif était de concevoir une plateforme RH permettant de gérer des employés, des demandes de congés et des fiches de paie à partir de données fictives.</p>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/FlorianBridier/Gerico-SAE" target="_blank" rel="noopener">Accéder au GitHub du projet</a>
+          </div>
+        </div>
+        <div class="project-detail-cover">
+          <img src="assets/img/gerico.png" alt="Interface du projet Gerico" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-section">
+      <div class="container detail-layout">
+        <aside class="project-summary-card reveal">
+          <h2>Résumé technique</h2>
+          <ul>
+            <li><strong>Type :</strong> application web RH</li>
+            <li><strong>Contexte :</strong> projet universitaire SAE</li>
+            <li><strong>Langage :</strong> PHP</li>
+            <li><strong>Templates :</strong> Smarty</li>
+            <li><strong>Front :</strong> HTML, CSS, Bootstrap</li>
+            <li><strong>Données :</strong> base SQL</li>
+            <li><strong>Fonctions clés :</strong> rôles, congés, employés, paie</li>
+          </ul>
+        </aside>
+
+        <div class="detail-content">
+          <article class="detail-block reveal">
+            <p class="section-kicker">Objectif</p>
+            <h2>À quoi sert le projet ?</h2>
+            <p>Gerico est une application web de gestion RH conçue pour centraliser plusieurs besoins d’une organisation : identification des utilisateurs, gestion des employés, suivi des demandes de congés et accès aux fiches de paie.</p>
+            <p>Le projet repose sur des données fictives, mais reprend une logique proche d’un outil interne d’entreprise : chaque utilisateur dispose d’un rôle et accède aux fonctionnalités adaptées à son profil.</p>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Fonctionnalités</p>
+            <h2>Ce que permet l’application</h2>
+            <div class="feature-grid">
+              <div><h3>Authentification</h3><p>Connexion utilisateur avec distinction des accès selon le rôle : administrateur ou employé.</p></div>
+              <div><h3>Gestion des rôles</h3><p>Interface pensée pour séparer les droits d’administration des actions disponibles côté employé.</p></div>
+              <div><h3>Demandes de congés</h3><p>Création, validation, refus et suivi des demandes avec affichage de l’état de traitement.</p></div>
+              <div><h3>Gestion des employés</h3><p>Consultation des employés, accès aux détails et actions d’administration liées au personnel.</p></div>
+              <div><h3>Fiches de paie</h3><p>Génération ou consultation de fiches de paie à partir de données fictives structurées en base.</p></div>
+              <div><h3>Tableau de bord</h3><p>Vue synthétique permettant d’accéder rapidement aux informations principales de gestion.</p></div>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Architecture</p>
+            <h2>Organisation technique</h2>
+            <p>L’application suit une logique web classique : une couche PHP pour le traitement, des templates Smarty pour structurer l’affichage, une base SQL pour stocker les données et une interface HTML/CSS/Bootstrap pour proposer une navigation claire.</p>
+            <div class="architecture-flow">
+              <span>Utilisateur</span>
+              <span>Interface Bootstrap</span>
+              <span>PHP / Smarty</span>
+              <span>Base SQL</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Sécurité & logique métier</p>
+            <h2>Points importants</h2>
+            <ul class="clean-list">
+              <li>Contrôle des accès selon le rôle de l’utilisateur.</li>
+              <li>Séparation entre l’espace administrateur et l’espace employé.</li>
+              <li>Structuration des données autour des employés, congés et fiches de paie.</li>
+              <li>Interface d’administration pour centraliser les actions importantes.</li>
+              <li>Travail sur la cohérence fonctionnelle d’un outil interne RH.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Compétences mobilisées</p>
+            <h2>Ce que ce projet démontre</h2>
+            <div class="tech-pills big">
+              <span>Développement PHP</span>
+              <span>Base de données SQL</span>
+              <span>Gestion des rôles</span>
+              <span>Interface admin</span>
+              <span>Templates Smarty</span>
+              <span>Bootstrap</span>
+              <span>Conception fonctionnelle</span>
+              <span>Projet en équipe</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots-section">
+
+  <div class="screenshots-container"> <!-- AJOUT ICI -->
+
+    <h2>Aperçu du projet</h2>
+
+    <div class="screenshot-block">
+      <h3>Connexion</h3>
+      <img src="assets/img/gerico/connexion.png">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Tableau de bord</h3>
+      <img src="assets/img/gerico/dashboard.png">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Panel administrateur</h3>
+      <img src="assets/img/gerico/admin-panel.png">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Gestion des congés</h3>
+      <img src="assets/img/gerico/gestionconge.png">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Demandes de congés</h3>
+      <img src="assets/img/gerico/demandeconge.png">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Gestion des fiches de paie</h3>
+      <img src="assets/img/gerico/gestionfiche.png">
+    </div>
+
+    <div class="screenshot-block">
+      <h3>Fiche de paie (exemple)</h3>
+      <img src="assets/img/gerico/fichedepaie.png">
+    </div>
+
+  </div> <!-- FIN container -->
+
+</section>
+  </main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- NAVIGATION -->
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- PROJETS -->
+    <div class="footer-col">
+      <h4>Projets</h4>
+      <ul>
+        <li><a href="projet-fitlab.html">FitLab – Le laboratoire du sport</a></li>
+        <li><a href="projet-pacman.html">Pac-Man Shattered World</a></li>
+        <li><a href="projet-gerico.html">Gerico – Gestion RH</a></li>
+        <li><a href="projet-calculateur-reseau.html">Calculateur de plage IP</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:florian.proth10@laposte.net">florian.proth10@laposte.net</a></li>
+        <li><a href="tel:+33602175398">06 02 17 53 98</a></li>
+        <li><a href="https://www.linkedin.com/in/florian-bridier-aa515a275/">LinkedIn</a></li>
+        <li><a href="https://github.com/FlorianBridier">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BAS -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Florian Bridier. Tous droits réservés.</p>
+  </div>
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

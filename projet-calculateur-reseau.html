@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Projet Calculateur de plage IP : application C# .NET pour calcul IPv4, subnetting, CIDR, broadcast et plages d’hôtes." />
+
+  <title>Calculateur Réseau | Projet détaillé</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header class="site-header" id="top">
+  <nav class="navbar">
+
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <div class="brand-text">
+        <span class="brand-name">Florian Bridier</span>
+        <span class="brand-sub">Cybersecurity & Infrastructure</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <i></i><i></i><i></i>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="parcours.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-socials">
+      <a href="https://www.linkedin.com/in/florian-bridier-aa515a275/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.24 8.25h4.5V24H.24V8.25zM7.5 8.25h4.31v2.15h.06c.6-1.14 2.06-2.34 4.24-2.34 4.53 0 5.37 2.98 5.37 6.85V24h-4.5v-7.68c0-1.83-.03-4.18-2.55-4.18-2.55 0-2.94 1.99-2.94 4.05V24H7.5V8.25z"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/FlorianBridier" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.1.78-.25.78-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.53-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.14 1.17.91-.25 1.88-.37 2.84-.37.96 0 1.93.12 2.84.37 2.18-1.48 3.14-1.17 3.14-1.17.62 1.59.23 2.77.11 3.06.73.8 1.18 1.82 1.18 3.07 0 4.38-2.68 5.35-5.24 5.64.41.35.78 1.04.78 2.1v3.12c0 .31.21.66.79.55C20.71 21.41 24 17.09 24 12 24 5.65 18.85.5 12 .5z"/>
+        </svg>
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+  <main>
+
+    <section class="project-detail-hero section">
+      <div class="container project-detail-grid reveal">
+
+        <div>
+          <a class="back-link" href="projets.html">← Retour aux projets</a>
+
+          <p class="eyebrow">SAE · C# & Réseaux</p>
+
+          <h1>Calculateur de plage IP</h1>
+
+          <p class="hero-text">
+            Application développée en C# avec .NET permettant de calculer les informations essentielles
+            d’un réseau IPv4 : adresse réseau, adresse de broadcast, plage d’hôtes utilisables,
+            nombre d’adresses et conversion masque décimal ↔ CIDR.
+          </p>
+
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/FlorianBridier/Calculateur-Reseau-SAE" target="_blank" rel="noopener">Accéder au GitHub du projet</a>
+          </div>
+        </div>
+
+        <div class="project-detail-cover">
+          <img src="assets/img/calculateur.png" alt="Aperçu du calculateur réseau" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section detail-section">
+      <div class="container detail-layout">
+
+        <aside class="project-summary-card reveal">
+          <h2>Résumé technique</h2>
+
+          <ul>
+            <li><strong>Type :</strong> application desktop</li>
+            <li><strong>Contexte :</strong> projet universitaire SAE</li>
+            <li><strong>Langage :</strong> C#</li>
+            <li><strong>Framework :</strong> .NET</li>
+            <li><strong>Paradigme :</strong> programmation orientée objet</li>
+            <li><strong>Domaine :</strong> réseaux / adressage IPv4</li>
+            <li><strong>Concepts :</strong> CIDR, subnetting, binaire</li>
+            <li><strong>Fonctions clés :</strong> network, broadcast, hosts, masque</li>
+          </ul>
+        </aside>
+
+        <div class="detail-content">
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Objectif</p>
+
+            <h2>À quoi sert le projet ?</h2>
+
+            <p>
+              Ce calculateur réseau permet de déterminer rapidement les informations importantes
+              d’un réseau IPv4 à partir d’une adresse IP et d’un masque de sous-réseau.
+            </p>
+
+            <p>
+              Le projet met en pratique les notions fondamentales d’adressage IPv4 et de subnetting,
+              en transformant des concepts théoriques en une application fonctionnelle.
+            </p>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Fonctionnalités</p>
+
+            <h2>Ce que permet l’application</h2>
+
+            <div class="feature-grid">
+              <div>
+                <h3>Adresse réseau</h3>
+                <p>Calcul automatique de l’adresse réseau à partir de l’IP et du masque.</p>
+              </div>
+
+              <div>
+                <h3>Broadcast</h3>
+                <p>Détermination de l’adresse de broadcast associée au réseau.</p>
+              </div>
+
+              <div>
+                <h3>Plage d’hôtes</h3>
+                <p>Calcul de la première et de la dernière adresse IP utilisables.</p>
+              </div>
+
+              <div>
+                <h3>Nombre d’adresses</h3>
+                <p>Calcul du nombre total d’adresses IP et du nombre de machines possibles.</p>
+              </div>
+
+              <div>
+                <h3>Masque / CIDR</h3>
+                <p>Conversion entre masque décimal et notation CIDR.</p>
+              </div>
+
+              <div>
+                <h3>Validation</h3>
+                <p>Contrôle des entrées utilisateur et gestion des erreurs de saisie.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Réseau</p>
+
+            <h2>Concepts abordés</h2>
+
+            <ul class="clean-list">
+              <li>Adressage IPv4.</li>
+              <li>Masque de sous-réseau.</li>
+              <li>Notation CIDR.</li>
+              <li>Calcul binaire réseau / hôte.</li>
+              <li>Subnetting.</li>
+              <li>Bits réseau et bits hôte.</li>
+              <li>Plage d’hôtes utilisables.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Logique de calcul</p>
+
+            <h2>Traitement technique</h2>
+
+            <p>
+              L’application manipule les octets d’une adresse IPv4 et du masque pour calculer
+              les informations réseau. Les conversions entre décimal, binaire et hexadécimal
+              permettent de rendre visible le fonctionnement interne du subnetting.
+            </p>
+
+            <div class="architecture-flow">
+              <span>Adresse IP</span>
+              <span>Masque / CIDR</span>
+              <span>Calcul binaire</span>
+              <span>Résultats réseau</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Compétences mobilisées</p>
+
+            <h2>Ce que ce projet démontre</h2>
+
+            <div class="tech-pills big">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>POO</span>
+              <span>Adressage IPv4</span>
+              <span>Subnetting</span>
+              <span>CIDR</span>
+              <span>Manipulation binaire</span>
+              <span>Validation utilisateur</span>
+              <span>Logique réseau</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Apports</p>
+
+            <h2>Ce que ce projet m’a apporté</h2>
+
+            <p>
+              Ce projet m’a permis de renforcer mes bases en adressage IPv4 et en subnetting,
+              tout en les appliquant dans un programme concret. Il m’a aussi permis de travailler
+              la logique de calcul réseau, la validation des entrées et la structuration d’un projet C#.
+            </p>
+
+            <p>
+              Il relie directement des notions réseau importantes à une application pratique, ce qui en fait
+              un projet utile pour comprendre et automatiser les calculs IPv4.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots-section">
+      <div class="screenshots-container">
+
+        <h2>Aperçu du projet</h2>
+
+        <div class="screenshot-block">
+          <h3>Interface du calculateur</h3>
+          <img src="assets/img/calculateur-reseau/vfinale.png" alt="Interface du calculateur réseau" />
+        </div>
+
+        <div class="screenshot-block">
+          <h3>Affiche explicative du projet</h3>
+          <img src="assets/img/calculateur-reseau/explication.png" alt="Affiche explicative du calculateur réseau" />
+        </div>
+
+        <div class="screenshot-block">
+          <h3>Version de test</h3>
+          <img src="assets/img/calculateur-reseau/vtest.png" alt="Interface du calculateur réseau" />
+        </div>
+
+        <div class="screenshot-block">
+          <h3>Test d'erreur (version de test)</h3>
+          <img src="assets/img/calculateur-reseau/erreur.png" alt="Affiche explicative du calculateur réseau" />
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- NAVIGATION -->
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- PROJETS -->
+    <div class="footer-col">
+      <h4>Projets</h4>
+      <ul>
+        <li><a href="projet-fitlab.html">FitLab – Le laboratoire du sport</a></li>
+        <li><a href="projet-pacman.html">Pac-Man Shattered World</a></li>
+        <li><a href="projet-gerico.html">Gerico – Gestion RH</a></li>
+        <li><a href="projet-calculateur-reseau.html">Calculateur de plage IP</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:florian.proth10@laposte.net">florian.proth10@laposte.net</a></li>
+        <li><a href="tel:+33602175398">06 02 17 53 98</a></li>
+        <li><a href="https://www.linkedin.com/in/florian-bridier-aa515a275/">LinkedIn</a></li>
+        <li><a href="https://github.com/FlorianBridier">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BAS -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Florian Bridier. Tous droits réservés.</p>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

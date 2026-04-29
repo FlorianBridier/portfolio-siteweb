@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Projet Pac-Man Shattered World : jeu C# WinForms avec graphes, pathfinding, Dijkstra, parcours eulérien et gestion des mondes." />
+
+  <title>Pac-Man Shattered World | Projet détaillé</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header class="site-header" id="top">
+  <nav class="navbar">
+
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <div class="brand-text">
+        <span class="brand-name">Florian Bridier</span>
+        <span class="brand-sub">Cybersecurity & Infrastructure</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <i></i><i></i><i></i>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="parcours.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-socials">
+      <a href="https://www.linkedin.com/in/florian-bridier-aa515a275/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.24 8.25h4.5V24H.24V8.25zM7.5 8.25h4.31v2.15h.06c.6-1.14 2.06-2.34 4.24-2.34 4.53 0 5.37 2.98 5.37 6.85V24h-4.5v-7.68c0-1.83-.03-4.18-2.55-4.18-2.55 0-2.94 1.99-2.94 4.05V24H7.5V8.25z"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/FlorianBridier" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.1.78-.25.78-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.53-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.14 1.17.91-.25 1.88-.37 2.84-.37.96 0 1.93.12 2.84.37 2.18-1.48 3.14-1.17 3.14-1.17.62 1.59.23 2.77.11 3.06.73.8 1.18 1.82 1.18 3.07 0 4.38-2.68 5.35-5.24 5.64.41.35.78 1.04.78 2.1v3.12c0 .31.21.66.79.55C20.71 21.41 24 17.09 24 12 24 5.65 18.85.5 12 .5z"/>
+        </svg>
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+  <main>
+
+    <section class="project-detail-hero section">
+      <div class="container project-detail-grid reveal">
+
+        <div>
+          <a class="back-link" href="projets.html">← Retour aux projets</a>
+
+          <p class="eyebrow">SAE · Jeu vidéo C#</p>
+
+          <h1>Pac-Man Shattered World</h1>
+
+          <p class="hero-text">
+            Jeu Pac-Man développé en C# avec WinForms et .NET 8 dans le cadre d’un projet universitaire.
+            Le projet repose sur plusieurs mondes inspirés d’univers vidéoludiques, avec gestion des collisions,
+            états de jeu, logique des ennemis et algorithmes de graphes pour le pathfinding.
+          </p>
+
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/FlorianBridier/PacMan-Shattered-World-SAE" target="_blank" rel="noopener">Accéder au GitHub du projet</a>
+          </div>
+        </div>
+
+        <div class="project-detail-cover">
+          <img src="assets/img/pacman.png" alt="Aperçu du projet Pac-Man Shattered World" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section detail-section">
+      <div class="container detail-layout">
+
+        <aside class="project-summary-card reveal">
+          <h2>Résumé technique</h2>
+
+          <ul>
+            <li><strong>Type :</strong> jeu vidéo desktop</li>
+            <li><strong>Contexte :</strong> projet universitaire SAE</li>
+            <li><strong>Langage :</strong> C#</li>
+            <li><strong>Framework :</strong> .NET 8</li>
+            <li><strong>Interface :</strong> WinForms</li>
+            <li><strong>Paradigme :</strong> programmation orientée objet</li>
+            <li><strong>Algorithmes :</strong> Dijkstra, parcours eulérien, graphes</li>
+            <li><strong>Fonctions clés :</strong> collisions, score, vies, ennemis, mondes</li>
+          </ul>
+        </aside>
+
+        <div class="detail-content">
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Objectif</p>
+
+            <h2>À quoi sert le projet ?</h2>
+
+            <p>
+              Pac-Man Shattered World est une revisite du jeu Pac-Man classique. L’objectif était de développer
+              un jeu fonctionnel en C# tout en intégrant des mécaniques plus avancées : plusieurs mondes,
+              des objectifs différents selon les niveaux, une logique d’ennemis et des algorithmes de graphes.
+            </p>
+
+            <p>
+              Le concept “Shattered World” repose sur l’idée de traverser plusieurs univers inspirés de jeux vidéo.
+              Chaque monde possède son ambiance, ses règles, ses ennemis et ses objectifs.
+            </p>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Fonctionnalités</p>
+
+            <h2>Ce que permet le jeu</h2>
+
+            <div class="feature-grid">
+              <div>
+                <h3>Déplacements</h3>
+                <p>Déplacement du joueur sur la carte avec gestion des directions et des contraintes du labyrinthe.</p>
+              </div>
+
+              <div>
+                <h3>Collisions</h3>
+                <p>Détection des collisions avec les murs, les éléments de jeu, les ennemis et les objectifs.</p>
+              </div>
+
+              <div>
+                <h3>Score & vies</h3>
+                <p>Système de score, gestion des vies et conditions de défaite ou de réussite.</p>
+              </div>
+
+              <div>
+                <h3>États du jeu</h3>
+                <p>Gestion du menu, de la pause, de la partie en cours et de la fin de partie.</p>
+              </div>
+
+              <div>
+                <h3>Plusieurs mondes</h3>
+                <p>Chaque monde possède sa propre logique, ses éléments visuels et ses objectifs.</p>
+              </div>
+
+              <div>
+                <h3>Ennemis</h3>
+                <p>Gestion des comportements ennemis, déplacements et interactions avec le joueur.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Algorithmique</p>
+
+            <h2>Pathfinding et graphes</h2>
+
+            <p>
+              Une partie importante du projet repose sur la modélisation de certains déplacements sous forme de graphe.
+              Cette approche permet de calculer des chemins et d’améliorer la logique de déplacement des ennemis.
+            </p>
+
+            <ul class="clean-list">
+              <li>Utilisation de l’algorithme de Dijkstra pour le pathfinding.</li>
+              <li>Utilisation du parcours eulérien dans la logique de graphe.</li>
+              <li>Modélisation de la carte sous forme de nœuds et de connexions.</li>
+              <li>Gestion des chemins selon la position du joueur et des ennemis.</li>
+              <li>Application concrète de notions théoriques dans un jeu vidéo.</li>
+            </ul>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Architecture</p>
+
+            <h2>Organisation technique</h2>
+
+            <p>
+              Le projet est structuré autour d’une logique orientée objet : séparation des responsabilités,
+              gestion des entités, des états du jeu, des cartes, des collisions et des déplacements.
+            </p>
+
+            <div class="architecture-flow">
+              <span>Joueur</span>
+              <span>Carte / Monde</span>
+              <span>Graphes</span>
+              <span>Ennemis</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Mondes</p>
+
+            <h2>Timeline des mondes</h2>
+
+            <div class="world-timeline">
+
+              <div class="world-step">
+                <span class="world-number">01</span>
+                <div>
+                  <h3>Minecraft</h3>
+                  <p>Collecte de ressources pour fabriquer une hache et débloquer la sortie du labyrinthe.</p>
+                </div>
+              </div>
+
+              <div class="world-step">
+                <span class="world-number">02</span>
+                <div>
+                  <h3>Sonic</h3>
+                  <p>Collecte des émeraudes du chaos avec une logique de vitesse et de bonus de déplacement.</p>
+                </div>
+              </div>
+
+              <div class="world-step">
+                <span class="world-number">03</span>
+                <div>
+                  <h3>FIFA</h3>
+                  <p>Récupération de ballons pour débloquer l’objectif final : le ballon d’or.</p>
+                </div>
+              </div>
+
+              <div class="world-step">
+                <span class="world-number">04</span>
+                <div>
+                  <h3>Mario</h3>
+                  <p>Collecte de fragments de clé et utilisation de bonus inspirés de l’univers Mario.</p>
+                </div>
+              </div>
+
+              <div class="world-step">
+                <span class="world-number">05</span>
+                <div>
+                  <h3>Zelda</h3>
+                  <p>Recherche de morceaux de Triforce et de la Master Sword pour progresser.</p>
+                </div>
+              </div>
+
+              <div class="world-step">
+                <span class="world-number">06</span>
+                <div>
+                  <h3>Doom</h3>
+                  <p>Ambiance plus rapide et hostile, avec fragments d’arme et ennemi bloquant la sortie.</p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Compétences mobilisées</p>
+
+            <h2>Ce que ce projet démontre</h2>
+
+            <div class="tech-pills big">
+              <span>Développement C#</span>
+              <span>.NET 8</span>
+              <span>WinForms</span>
+              <span>POO</span>
+              <span>Algorithmes de graphes</span>
+              <span>Dijkstra</span>
+              <span>Pathfinding</span>
+              <span>Gestion de collisions</span>
+              <span>Projet en équipe</span>
+            </div>
+          </article>
+
+          <article class="detail-block reveal">
+            <p class="section-kicker">Apports</p>
+
+            <h2>Ce que ce projet m’a apporté</h2>
+
+            <p>
+              Ce projet m’a permis de renforcer mes compétences en C#, en programmation orientée objet
+              et en structuration d’un projet applicatif. Il m’a aussi permis de relier des notions
+              algorithmiques à un cas concret, notamment avec les graphes et le pathfinding.
+            </p>
+
+            <p>
+              La dimension jeu vidéo a également demandé une réflexion sur la gestion des états,
+              des interactions utilisateur, des collisions et du comportement des ennemis.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots-section">
+      <div class="screenshots-container">
+
+        <h2>Aperçu du projet</h2>
+
+        <div class="screenshot-block">
+          <h3>Menu principal</h3>
+          <img src="assets/img/pacman/menu.png" alt="Présentation du concept Pac-Man Shattered World" />
+        </div>
+
+        <div class="screenshot-block">
+          <h3>Menu Pause</h3>
+          <img src="assets/img/pacman/pause.png" alt="Monde Minecraft du projet Pac-Man Shattered World" />
+        </div>
+
+        <div class="screenshot-block">
+          <h3>Monde Minecraft</h3>
+          <img src="assets/img/pacman/minecraft.png" alt="Monde Sonic du projet Pac-Man Shattered World" />
+        </div>
+
+        <div class="screenshot-block">
+          <h3>Monde Sonic</h3>
+          <img src="assets/img/pacman/sonic.png" alt="Monde FIFA du projet Pac-Man Shattered World" />
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- NAVIGATION -->
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- PROJETS -->
+    <div class="footer-col">
+      <h4>Projets</h4>
+      <ul>
+        <li><a href="projet-fitlab.html">FitLab – Le laboratoire du sport</a></li>
+        <li><a href="projet-pacman.html">Pac-Man Shattered World</a></li>
+        <li><a href="projet-gerico.html">Gerico – Gestion RH</a></li>
+        <li><a href="projet-calculateur-reseau.html">Calculateur de plage IP</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:florian.proth10@laposte.net">florian.proth10@laposte.net</a></li>
+        <li><a href="tel:+33602175398">06 02 17 53 98</a></li>
+        <li><a href="https://www.linkedin.com/in/florian-bridier-aa515a275/">LinkedIn</a></li>
+        <li><a href="https://github.com/FlorianBridier">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BAS -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Florian Bridier. Tous droits réservés.</p>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
