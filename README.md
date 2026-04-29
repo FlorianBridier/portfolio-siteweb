@@ -89,3 +89,17 @@ portfolio/
 - Travail sur l’expérience utilisateur et le design
 
 ---
+
+## Aperçu du projet
+
+### Page d'accueil
+![accueil](screenshots/accueil.png)  
+
+### Présentation des projets
+![projets](screenshots/projets.png)  
+
+### Récapitulatif de mes formations
+![formation](screenshots/formation.png)
+
+### Test de sécurité [A+]
+![secu](screenshots/secu.png)
